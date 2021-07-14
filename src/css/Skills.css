@@ -1,0 +1,149 @@
+/* .skills > div{
+    background: rgb(238, 240, 236);
+  width: 180px;
+  height:180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left:50px;
+  }
+  .skills img{
+    height: 100%;
+    width: 100%;
+  }
+  .containers{
+    padding-right: 20px;
+    width: 80%;
+    margin:auto ;
+    height: 220px;
+    position: relative;
+    right:20px;
+    margin-top: 15%;
+    margin-left: 15%;
+    transform-style: preserve-3d;
+    /* transform: perspective(1000px) rotateX(-5deg); */
+/*}*/
+/* .skills{
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotate 10s linear infinite ;
+    transform: perspective(1000px) rotateX(-5deg);
+  
+  }
+  @keyframes rotate {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(359deg);
+    }
+    
+  }
+  .skills > div:nth-child(1){
+    transform: rotateY(60deg)translateX(100px);
+  
+  }
+  .skills > div:nth-child(2){
+    transform: rotateY(120deg)translateX(100px);
+  
+  }
+  .skills > div:nth-child(3){
+    transform: rotateY(180deg)translateX(100px);
+  
+  }
+  .skills > div:nth-child(4){
+    transform: rotateY(240deg)translateX(100px);
+  
+  }
+  .skills > div:nth-child(5){
+    transform: rotateY(300deg)translateX(100px);
+  
+  }
+  .skills > div:nth-child(6){
+    transform: rotateY(360deg)translateX(100px);
+  
+  } */
+
+.containers {
+  margin: 60px  0;
+  /* background: crimson; */
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  perspective: 380px;
+  perspective-origin: 50% 50%;
+}
+/* .containers:hover{
+    perspective: 1500px;
+   
+  } */
+.skills:hover {
+  animation: animate 10s ease-in-out infinite;
+}
+.skills {
+  transform-style: preserve-3d;
+  width: 220px;
+  height: 250px;
+  margin: 20px auto 0 auto;
+  position: relative;
+  animation: animate 10s ease-in-out infinite;
+}
+ .skills:hover{
+  transform: rotateZ(10deg) rotateX(90deg) rotateY(350deg);
+}
+.skills > img {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: .8;
+}
+.skills .img1 {
+  transform:  translateZ(100px);
+}
+.skills .img2 {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.skills .img3 {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.skills .img4 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.skills .img5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+
+}
+.skills .img6 {
+  transform: rotateX(-90deg) translateZ(100px);
+} 
+@keyframes animate {
+  from{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateY(-360deg) rotateZ(90deg);;
+  }
+ 99%{
+    transform: rotateY(90deg);
+  }
+}

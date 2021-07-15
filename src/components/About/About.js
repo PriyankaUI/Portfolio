@@ -1,6 +1,6 @@
 import React from "react";
-import "../App.css";
-import Skills from "./Skills";
+//import "../App.css";
+import Skills from "../Skills&Experience/Skills";
 
 function About() {
   return (
@@ -24,7 +24,9 @@ function About() {
             </p>
           </div>
           <div className="col-md-6 col-sm-12">
-            <Skills />
+            <div className="image">
+              <img src="images/women.jpg" alt=""  style={{height:"500px"}} />
+            </div>
           </div>
         </div>
       </section>

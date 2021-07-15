@@ -1,79 +1,53 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: white;
 }
-.home-page{
+.button {
+  border: none;
+  padding: 5px 15px;
+  background: transparent;
+  border: 1px solid #07e4c6;
+  color: white;
+}
+.button:hover {
+  background: #07e4c6;
+  color: white;
+}
+/***************  homepage ********************/
+.home-page {
   height: 91vh;
   padding: 20px 20px;
   width: 100%;
   background: #222;
   color: white;
 }
-
-.About-Page,
-.projects-page,
-.contact-page {
-  /* height: 92vh; */
-  width: 100%;
-  background: #222;
-  color: white;
-  padding: 20px 20px;
-}
 .text1 {
   font-size: 30px;
 }
-.heading{
-  color:white;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.line{
-  background-color: crimson;
-  height: 5px!important;
-  border-radius: 50px;
-  width: 10%;
-  opacity: 1;
-}
-.button {
-  border: none;
-  padding: 5px 15px;
-  background: transparent;
-  border: 1px solid rgb(1, 168, 160);
-  color: white;
-}
-.button:hover{
-  /* background: transparent; */
-  background:  rgb(1, 168, 160);
-}
-
-.about > P {
-  font-size: 20px;
-}
- .image{
+.image {
   background: #222;
   max-width: 400px;
   max-height: 400px;
   margin: auto;
-  border-radius:50% ;
+  border-radius: 50%;
   z-index: 0.5;
-} 
-.image img{
+}
+.image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-/*------------------home start------------------------*/
-.circles{
+.circles {
   position: relative;
   display: flex;
   justify-content: center;
 }
-.circle{
+.circle {
   position: absolute;
   top: 0;
   left: 0;
@@ -82,6 +56,32 @@ a{
   height: 100%;
   clip-path: circle(600px at right 800px);
 }
+/**********************  home end   *********************/
+.About-Page,
+.projects-page,
+.contact-page,
+.work-page {
+  /* height: 92vh; */
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 20px 20px;
+}
 
-
-
+.heading {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/************************ about page  *************************/
+.line {
+  background-color: crimson;
+  height: 5px !important;
+  border-radius: 50px;
+  width: 10%;
+  opacity: 1;
+}
+.about > P {
+  font-size: 20px;
+}
+/*********************  about page end ***************************/

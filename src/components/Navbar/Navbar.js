@@ -2,7 +2,7 @@ import React,{ useState,useEffect }  from "react";
 import { NavLink } from "react-router-dom";
 import FormatAlignRightIcon from '@material-ui/icons/FormatAlignRight';
 import CloseIcon from '@material-ui/icons/Close';
-import '../css/Navbar.css'
+import './Navbar.css'
 
 function Navbar() {
 //const [showbtn, setshowbtn] = useState(false)
@@ -38,11 +38,7 @@ const closeMobilemenu=()=>{setclick(!click)}
             </NavLink>
           </div>
 
-          <div className="nav_item ">
-            <NavLink to="/About" className=" px-3" activeClassName="nav_active" onClick={closeMobilemenu}>
-              About
-            </NavLink>
-          </div>
+        
 
           <div className="nav_item ">
             <NavLink to="/Projects" className=" px-3" activeClassName="nav_active" onClick={closeMobilemenu}>
@@ -51,7 +47,12 @@ const closeMobilemenu=()=>{setclick(!click)}
           </div>
           <div className="nav_item ">
             <NavLink to="/Works" className=" px-3" activeClassName="nav_active"  onClick={closeMobilemenu}>
-             Works
+             Skills & Experience
+            </NavLink>
+          </div>
+          <div className="nav_item ">
+            <NavLink to="/About" className=" px-3" activeClassName="nav_active" onClick={closeMobilemenu}>
+              About
             </NavLink>
           </div>
           <div className="nav_item ">

@@ -8,9 +8,11 @@
   position: sticky;
   top: 0;
   width: 100%;
+  opacity: 1;
+  z-index: 10;
 }
 .navbar-div {
-  padding: 10px 20px;
+  padding: 5px 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -22,6 +24,7 @@
 }
 .navbar_menu {
   display: flex;
+  align-items: center;
 }
  .nav-btn {
   background: none;
@@ -36,7 +39,7 @@
   transition: all .2 ease;
 } */
 .nav_active{
-  color: crimson!important;
+  color: #f8274a!important;
 }
 
 @media screen and (max-width: 768px) {
@@ -80,11 +83,11 @@
     color: white;
     font-size: 20px;
   }
-  .nav_item:hover,.nav_active  {
+  .nav_item:hover  {
     background-color: crimson;
   }
   .nav_item:hover a{
-    color: black;
+    color: black!important;
     font-weight: 600;
   }
   

@@ -1,6 +1,7 @@
 import React from "react";
-import "../App.css";
-import Button from "./Button";
+//import "../App.css";
+import Button from "../Button";
+import { NavLink } from "react-router-dom";
 function Home() {
   return (
     <div className="home-page d-flex align-items-center">
@@ -12,10 +13,10 @@ function Home() {
               <div class="text1 my-2">Priyanka Pradhan</div>
               <div class="text1">
                 I am a{" "}
-                <span style={{ color: "crimson" }}>Frontend Developer</span>
+                <span style={{ color: "#f8274a" }}>Frontend Developer</span>
               </div>
               <div className="mt-3">
-                <Button text="Contact Me" />
+                <NavLink to="./Projects"><Button text="My Works" /></NavLink>
               </div>
             </div>
           </div>

@@ -1,9 +1,11 @@
 import React from "react";
+import ParticleBackground from "../../ParticleBackground";
 //import "../App.css";
 import Skills from "../Skills&Experience/Skills";
 
 function About() {
   return (
+    <>
     <div className="About-Page">
       <section className="container-fluid">
         <div className="row">
@@ -24,13 +26,15 @@ function About() {
             </p>
           </div>
           <div className="col-md-6 col-sm-12">
-            <div className="image">
+            <div className="image" style={{position:"relative",zIndex:"2"}}>
               <img src="images/women.jpg" alt=""  style={{height:"500px"}} />
             </div>
           </div>
         </div>
       </section>
     </div>
+    <ParticleBackground/>
+    </>
   );
 }
 

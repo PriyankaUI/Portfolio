@@ -7,10 +7,13 @@ import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 import Work from "./components/Skills&Experience/Work";
+import ParticleBackground from "./ParticleBackground";
+
 
 function App() {
   return (
     <div className="App">
+    
      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -20,6 +23,7 @@ function App() {
         <Route exact path="/Contact" component={Contact} />
         <Home />
       </Switch>
+      
       <Footer/>
     </div>
   );

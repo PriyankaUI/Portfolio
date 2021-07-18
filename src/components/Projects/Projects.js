@@ -1,9 +1,11 @@
 import React from "react";
+import ParticleBackground from "../../ParticleBackground";
 import Card from "./Card";
 import './Project.css'
 
 function Projects() {
   return (
+    <>
     <div className="projects-page ">
       <h2 className="pb-3 ps-3 heading">Projects</h2>
       <div className="project-container">
@@ -14,6 +16,8 @@ function Projects() {
         </div>
       </div>
     </div>
+    <ParticleBackground/>
+    </>
   );
 }
 

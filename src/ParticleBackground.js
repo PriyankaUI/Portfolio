@@ -22,7 +22,7 @@ const ParticleBackground = () => {
               },
             },
             color: {
-              value: "#fff",
+              value: "#fff  ",
             },
            
             size: {
